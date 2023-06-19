@@ -348,7 +348,7 @@ body{
     height: 100px;
     background-color: rgb(172, 38, 143);
     position: absolute;
-    animation: changeShape 3s linear infinite, moveShape 5s linear infinite alternate;
+    animation: changeShape 3s linear infinite, moveShape 5s infinite alternate;
     margin-top: 185px;
     border:solid 5px yellow;
 }
