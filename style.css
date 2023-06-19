@@ -2,12 +2,13 @@ body{
     background-image: url('img/rick-morty.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 10%;
 }
 .contenedor{
   display:flex;
   justify-content:space-evenly;
   align-items:center;
-  }
+}
 .card {
   border: 5px solid black;
   border-radius: 5px;
@@ -16,6 +17,8 @@ body{
   margin: 10px;
   width: 200px;
   background-color:red;
+  
+
   
 }
 .card:before {
