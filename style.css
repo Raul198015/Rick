@@ -1,3 +1,8 @@
+body{
+    display: flex;
+    background-color: green;
+
+}
 .card {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -6,7 +11,9 @@
   margin: 10px;
   width: 200px;
   background-color:red;
-  }
+  
+}
+  
 
 .card img {
   width: 100%;
@@ -38,4 +45,173 @@
 .card a:hover {
   background-color: yellow;
   color:blue;
+  transform: scale(1.05);
+  border-color: #333;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
+
+.card1{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    background-color:red;
+    }
+    .card1 img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      
+      .card1 h3 {
+        margin: 10px 0;
+        color: blue;
+      }
+      
+      .card1 p {
+        margin: 10px 0;
+        color: blue;
+      }
+      
+      .card1 a {
+        display: flex;
+        text-align: center;
+        background-color: blue;
+        color:yellow;
+        padding: 5px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 10px;
+      }
+      
+      .card1 a:hover {
+        background-color: yellow;
+        color:blue;
+      }
+
+      
+      .card2 {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+        background-color:red;
+        }
+      
+      .card2 img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      
+      .card2 h3 {
+        margin: 10px 0;
+        color: blue;
+      }
+      
+      .card2 p {
+        margin: 10px 0;
+        color: blue;
+      }
+      
+      .card2 a {
+        display: flex;
+        text-align: center;
+        background-color: blue;
+        color:yellow;
+        padding: 5px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 10px;
+      }
+      
+      .card2 a:hover {
+        background-color: yellow;
+        color:blue;
+      }
+      .card3 {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+        background-color:red;
+        }
+      
+      .card3 img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      
+      .card3 h3 {
+        margin: 10px 0;
+        color: blue;
+      }
+      
+      .card3 p {
+        margin: 10px 0;
+        color: blue;
+      }
+      
+      .card3 a {
+        display: flex;
+        text-align: center;
+        background-color: blue;
+        color:yellow;
+        padding: 5px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 10px;
+      }
+      
+      .card3 a:hover {
+        background-color: yellow;
+        color:blue;
+      }
+      .card4 {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+        background-color:red;
+        }
+      
+      .card4 img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      
+      .card4 h3 {
+        margin: 10px 0;
+        color: blue;
+      }
+      
+      .card4 p {
+        margin: 10px 0;
+        color: blue;
+      }
+      
+      .card4 a {
+        display: flex;
+        text-align: center;
+        background-color: blue;
+        color:yellow;
+        padding: 5px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 10px;
+      }
+      
+      .card4 a:hover {
+        background-color: yellow;
+        color:blue;
+      }
