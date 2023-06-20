@@ -354,7 +354,7 @@ body{
 
     @keyframes moveTriangle {
       0% { left: 0; top: 50%; }
-      100% { left: calc(100% - 100px); top: 50%; }
+      100% { left:80% ; top: 50%; }
     }
     @keyframes changeColor{
       
@@ -382,5 +382,6 @@ body{
 
 @keyframes moveShape {
   0% { left: 0; top: 50%; }
-  100% { left: calc(100% - 100px); top: 50%; }
+  100% { left: 70%; top: 50%; }
 }
+
