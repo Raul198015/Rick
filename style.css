@@ -60,6 +60,8 @@ body{
   margin: 10px 0;
   color: blue;
   text-align: center;
+  font-weight: bold;
+  font-family: cursive;
 }
 
 .card p {
@@ -124,11 +126,15 @@ body{
         margin: 10px 0;
         color: blue;
         text-align: center;
+        font-weight: bold;
+        font-family: cursive;
       }
       
       .card1 p {
         margin: 10px 0;
-        color: blue;
+        color: black;
+        font-family: cursive;
+        font-weight: bold;
       }
       
       .card1 a {
@@ -183,11 +189,15 @@ body{
         margin: 10px 0;
         color: blue;
         text-align: center;
+        font-weight: bold;
+        font-family: cursive;
       }
       
       .card2 p {
         margin: 10px 0;
-        color: blue;
+        color: black;
+        font-family: cursive;
+        font-weight: bold;
       }
       
       .card2 a {
@@ -240,11 +250,15 @@ body{
         margin: 10px 0;
         color: blue;
         text-align: center;
+        font-weight: bold;
+        font-family: cursive;
       }
       
       .card3 p {
         margin: 10px 0;
-        color: blue;
+        color: black;
+        font-family: cursive;
+        font-weight: bold;
       }
       
       .card3 a {
@@ -297,11 +311,15 @@ body{
         margin: 10px 0;
         color: blue;
         text-align: center;
+        font-weight: bold;
+        font-family: cursive;
       }
       
       .card4 p {
         margin: 10px 0;
-        color: blue;
+        color: black;
+        font-family: cursive;
+        font-weight: bold;
       }
       
       .card4 a {
