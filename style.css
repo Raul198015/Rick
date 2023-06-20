@@ -341,29 +341,8 @@ body{
         transform: scale(1);
       }
 
-      #triangulo{
-        width:0px;
-        height: 0px;
-        border-left: 50px solid transparent;
-        border-right: 50px solid transparent;
-        border-bottom: 100px solid black;
-        position: absolute;
-        margin-top: 300px;
-        animation: moveTriangle 5s infinite alternate;
-    }
-
-    @keyframes moveTriangle {
-      0% { left: 0; top: 50%; }
-      100% { left:80% ; top: 50%; }
-    }
-    @keyframes changeColor{
-      
-      0% {background-color: red;}
-      25% {background-color: pink;}
-      50% {background-color: blue;}
-      75% {background-color: green;}
-      100% {background-color:yellow; }
-  }
+     
+  
   #shape {
     width: 100px;
     height: 100px;
@@ -371,7 +350,7 @@ body{
     position: absolute;
     animation: changeShape 3s linear infinite, moveShape 5s infinite alternate;
     margin-top: 185px;
-    border:solid 5px yellow;
+    border:solid 5px black;
 }
 
 @keyframes changeShape {
@@ -384,4 +363,11 @@ body{
   0% { left: 0; top: 50%; }
   100% { left: 70%; top: 50%; }
 }
-
+@keyframes changeColorshape{
+      
+  0% {background-color: red;}
+  25% {background-color: pink;}
+  50% {background-color: blue;}
+  75% {background-color: green;}
+  100% {background-color:yellow; }
+}
