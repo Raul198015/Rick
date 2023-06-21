@@ -315,7 +315,9 @@ body{
         font-family: cursive;
       }
       
-      .card4 p {
+      
+
+      #tria.card4 p {
         margin: 10px 0;
         color: black;
         font-family: cursive;
@@ -339,9 +341,7 @@ body{
       }
       .card4:hover:before {
         transform: scale(1);
-      }
-
-      #triangulo{
+      }ngulo{
         width:0px;
         height: 0px;
         border-left: 50px solid transparent;
