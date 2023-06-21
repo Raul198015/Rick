@@ -3,22 +3,27 @@ header{
   justify-content: center;
 }
 
-button{
-  color:green;
-  font-size: 300%;
-  background-color: blue;
-  border-radius: 50px;
-  border: solid 10px black
-  
+#button1{
+  background-color: rgb(236, 233, 30);
+  height: 30px;
+  width: 150px;
 }
 body{
     background-image: url('img/rick-morty.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    
-  
+  }
+#button2{
+  background-color: blue;
+  color: yellow;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 200px;
+  text-align: center;
 }
-.contenedor{
+
+  .contenedor{
   display:flex;
   justify-content:space-evenly;
   align-items:center;

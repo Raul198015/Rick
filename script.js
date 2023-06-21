@@ -25,3 +25,9 @@ fetch(urlApi,config)
     console.log(data.results[0].name)
 })
 
+const click = document.getElementById('button2');
+
+
+button2.addEventListener("click", () => {
+  window.open('https://rickandmortyapi.com/api/character', 'click', 'width=150px,height=150px');
+});
