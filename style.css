@@ -341,6 +341,146 @@ body{
         transform: scale(1);
       }
 
+      .card5 {
+        border: 5px solid black;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+        background-color:red;
+        
+      
+        
+      }
+      .card5:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+          transform: scale(0);
+          transition: transform 1s ease-in-out;
+          background-color: blue;
+        }
+        
+      
+      .card5 img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      
+      .card5 h3 {
+        margin: 10px 0;
+        color: blue;
+        text-align: center;
+        font-weight: bold;
+        font-family: cursive;
+      }
+      
+      .card5 p {
+        margin: 10px 0;
+        color: black;
+        font-family: cursive;
+        font-weight: bold;
+      
+      }
+      
+      .card5 a {
+        display: flex;
+        text-align: center;
+        background-color: blue;
+        color:yellow;
+        padding: 5px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 10px;
+      }
+      
+      .card5 a:hover {
+        background-color: yellow;
+        color:blue;
+        transform: scale(1.05);
+        border-color: #333;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+      }
+      .card5:hover:before {
+          transform: scale(1);
+        }
+
+        .card6 {
+          border: 5px solid black;
+          border-radius: 5px;
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+          padding: 10px;
+          margin: 10px;
+          width: 200px;
+          background-color:red;
+          
+        
+          
+        }
+        .card6:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            transform: scale(0);
+            transition: transform 1s ease-in-out;
+            background-color: blue;
+          }
+          
+        
+        .card6 img {
+          width: 100%;
+          height: auto;
+          border-radius: 5px;
+        }
+        
+        .card6 h3 {
+          margin: 10px 0;
+          color: blue;
+          text-align: center;
+          font-weight: bold;
+          font-family: cursive;
+        }
+        
+        .card6 p {
+          margin: 10px 0;
+          color: black;
+          font-family: cursive;
+          font-weight: bold;
+        
+        }
+        
+        .card6 a {
+          display: flex;
+          text-align: center;
+          background-color: blue;
+          color:yellow;
+          padding: 5px;
+          border-radius: 5px;
+          text-decoration: none;
+          margin-top: 10px;
+        }
+        
+        .card6 a:hover {
+          background-color: yellow;
+          color:blue;
+          transform: scale(1.05);
+          border-color: #333;
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+        }
+        .card6:hover:before {
+            transform: scale(1);
+          }
+
       #triangulo{
         width:0px;
         height: 0px;
