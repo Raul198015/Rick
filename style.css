@@ -7,7 +7,7 @@
   background-color: rgb(44, 88, 94);
   }
   
-  @media (min-width: 580px) {
+  @media (min-width: 770px) {
   .contenedor{
   display:grid;
   grid-template-columns: repeat(3, 1fr);

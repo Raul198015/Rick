@@ -12,11 +12,15 @@ changeshapeColor();
 
 button.addEventListener('click', imprimirrick)
 
+function openPopup() {
+window.open("https://rickandmortyapi.com/api/character/avatar/1.jpeg", "miPopup", 'width=300, height=300');
+}
 const urlApi = 'https://rickandmortyapi.com/api/character'
 function imprimirrick() {
 const config = {
 headers: {
 accept: "application/json",
+
 },
 }
 
@@ -33,6 +37,10 @@ console.log(data.results[0].name)
 }
 
 button1.addEventListener('click', imprimirmorty)
+
+function openPopup1() {
+window.open("https://rickandmortyapi.com/api/character/avatar/2.jpeg", "miPopup", 'width=50px,height=50px');
+}
 
 const urlApi1 = 'https://rickandmortyapi.com/api/character'
 function imprimirmorty() {
@@ -53,7 +61,12 @@ Gender1.innerHTML = data.results[1].gender
 console.log(data.results[1].name)
 })
 }
+
 button2.addEventListener('click', imprimirsummer)
+
+function openPopup2() {
+window.open("https://rickandmortyapi.com/api/character/avatar/3.jpeg", "miPopup", "width=50px,height=50px");
+}
 
 const urlApi2 = 'https://rickandmortyapi.com/api/character'
 function imprimirsummer() {
@@ -77,6 +90,10 @@ console.log(data.results[2].name)
 
 button3.addEventListener('click', imprimirbeth)
 
+function openPopup3() {
+window.open("https://rickandmortyapi.com/api/character/avatar/4.jpeg", "miPopup", "width=50px,height=50px");
+}
+
 const urlApi3 = 'https://rickandmortyapi.com/api/character'
 function imprimirbeth() {
 const config = {
@@ -98,6 +115,11 @@ console.log(data.results[3].name)
 }
 
 button4.addEventListener('click', imprimirjerry)
+
+function openPopup4() {
+window.open("https://rickandmortyapi.com/api/character/avatar/5.jpeg", "miPopup", "width=50px,height=50px");
+}
+
 
 const urlApi4 = 'https://rickandmortyapi.com/api/character'
 function imprimirjerry() {
@@ -121,6 +143,12 @@ console.log(data.results[4].name)
 
 button5.addEventListener('click', imprimirabadingo)
 
+
+
+function openPopup5() {
+window.open("https://rickandmortyapi.com/api/character/avatar/6.jpeg", "miPopup", "width=50px,height=50px");
+}
+
 const urlApi5 = 'https://rickandmortyapi.com/api/character'
 function imprimirabadingo() {
 const config = {
@@ -142,6 +170,10 @@ console.log(data.results[5].name)
 }
 
 button6.addEventListener('click', imprimirabradolf)
+
+function openPopup6() {
+window.open("https://rickandmortyapi.com/api/character/avatar/7.jpeg", "miPopup", "width=50px,height=50px");
+}
 
 const urlApi6 = 'https://rickandmortyapi.com/api/character'
 function imprimirabradolf() {
@@ -165,6 +197,10 @@ console.log(data.results[6].name)
 
 button7.addEventListener('click', imprimirjuezrick)
 
+function openPopup7() {
+window.open("https://rickandmortyapi.com/api/character/avatar/8.jpeg", "miPopup", "width=50px,height=50px");
+}
+
 const urlApi7 = 'https://rickandmortyapi.com/api/character'
 function imprimirjuezrick() {
 const config = {
@@ -186,6 +222,10 @@ console.log(data.results[7].name)
 }
 
 button8.addEventListener('click', imprimiragency)
+
+function openPopup8() {
+window.open("https://rickandmortyapi.com/api/character/avatar/9.jpeg", "miPopup", "width=50px,height=50px");
+}
 
 const urlApi8 = 'https://rickandmortyapi.com/api/character'
 function imprimiragency() {
@@ -209,6 +249,10 @@ console.log(data.results[8].name)
 
 button9.addEventListener('click', imprimiralan)
 
+function openPopup9() {
+window.open("https://rickandmortyapi.com/api/character/avatar/10.jpeg", "miPopup", "width=50px,height=50px");
+}
+
 const urlApi9 = 'https://rickandmortyapi.com/api/character'
 function imprimiralan() {
 const config = {
@@ -230,6 +274,10 @@ console.log(data.results[9].name)
 }
 
 button10.addEventListener('click', imprimiralbert)
+
+function openPopup10() {
+window.open("https://rickandmortyapi.com/api/character/avatar/11.jpeg", "miPopup", "width=50px,height=50px");
+}
 
 const urlApi10 = 'https://rickandmortyapi.com/api/character'
 function imprimiralbert() {
@@ -253,6 +301,10 @@ console.log(data.results[10].name)
 
 button11.addEventListener('click', imprimiralexander)
 
+function openPopup11() {
+window.open("https://rickandmortyapi.com/api/character/avatar/12.jpeg", "miPopup", "width=50px,height=50px");
+}
+
 const urlApi11 = 'https://rickandmortyapi.com/api/character'
 function imprimiralexander() {
 const config = {
@@ -274,6 +326,10 @@ console.log(data.results[11].name)
 }
 
 button12.addEventListener('click', imprimirgoogah)
+
+function openPopup12() {
+window.open("https://rickandmortyapi.com/api/character/avatar/13.jpeg", "miPopup", "width=50px,height=50px");
+}
 
 const urlApi12 = 'https://rickandmortyapi.com/api/character'
 function imprimirgoogah() {
@@ -297,6 +353,10 @@ console.log(data.results[12].name)
 
 button13.addEventListener('click', imprimiralienmorty)
 
+function openPopup13() {
+window.open( "https://rickandmortyapi.com/api/character/avatar/14.jpeg", "miPopup", "width=50px,height=50px");
+}
+
 const urlApi13 = 'https://rickandmortyapi.com/api/character'
 function imprimiralienmorty() {
 const config = {
@@ -318,6 +378,10 @@ console.log(data.results[13].name)
 }
 
 button14.addEventListener('click', imprimiralienrick)
+
+function openPopup14() {
+window.open("https://rickandmortyapi.com/api/character/avatar/15.jpeg", "miPopup", "width=50px,height=50px");
+}
 
 const urlApi14 = 'https://rickandmortyapi.com/api/character'
 function imprimiralienrick() {
@@ -341,6 +405,10 @@ console.log(data.results[14].name)
 
 button15.addEventListener('click', imprimircyborg)
 
+function openPopup15() {
+window.open( "https://rickandmortyapi.com/api/character/avatar/16.jpeg", "miPopup", "width=50px,height=50px");
+}
+
 const urlApi15 = 'https://rickandmortyapi.com/api/character'
 function imprimircyborg() {
 const config = {
@@ -362,6 +430,10 @@ console.log(data.results[15].name)
 }
 
 button16.addEventListener('click', imprimirannie)
+
+function openPopup16() {
+window.open("https://rickandmortyapi.com/api/character/avatar/17.jpeg", "miPopup", "width=50px,height=50px");
+}
 
 const urlApi16 = 'https://rickandmortyapi.com/api/character'
 function imprimirannie() {
@@ -385,6 +457,10 @@ console.log(data.results[16].name)
 
 button17.addEventListener('click', imprimirantenam)
 
+function openPopup17() {
+window.open("https://rickandmortyapi.com/api/character/avatar/18.jpeg", "miPopup", "width=50px,height=50px");
+}
+
 const urlApi17 = 'https://rickandmortyapi.com/api/character'
 function imprimirantenam() {
 const config = {
@@ -407,6 +483,10 @@ console.log(data.results[17].name)
 
 button18.addEventListener('click', imprimirantenar)
 
+function openPopup18() {
+window.open("https://rickandmortyapi.com/api/character/avatar/19.jpeg", "miPopup", "width=50px,height=50px");
+}
+
 const urlApi18 = 'https://rickandmortyapi.com/api/character'
 function imprimirantenar() {
 const config = {
@@ -428,6 +508,11 @@ console.log(data.results[18].name)
 }
 
 button19.addEventListener('click', imprimireyes)
+
+function openPopup19() {
+window.open("https://rickandmortyapi.com/api/character/avatar/20.jpeg", "miPopup", "width=50px,height=50px");
+}
+
 
 const urlApi19 = 'https://rickandmortyapi.com/api/character'
 function imprimireyes() {
