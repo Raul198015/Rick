@@ -26,6 +26,7 @@ fetch(urlApi,config)
     Name.innerHTML = data.results[0].name
     Status.innerHTML = data.results[0].status
     Specie.innerHTML = data.results[0].species
+    Type.innerHTML = data.results[0].type
     Gender.innerHTML = data.results[0].gender
     console.log(data.results[0].name)
 })
@@ -47,6 +48,7 @@ fetch(urlApi,config)
     Name1.innerHTML = data.results[1].name
     Status1.innerHTML = data.results[1].status
     Specie1.innerHTML = data.results[1].species
+    Type1.innerHTML = data.results[1].type
     Gender1.innerHTML = data.results[1].gender
     console.log(data.results[1].name)
 })
@@ -67,6 +69,7 @@ fetch(urlApi,config)
     Name2.innerHTML = data.results[2].name
     Status2.innerHTML = data.results[2].status
     Specie2.innerHTML = data.results[2].species
+    Type2.innerHTML = data.results[2].type
     Gender2.innerHTML = data.results[2].gender
     console.log(data.results[2].name)
 })
@@ -88,6 +91,7 @@ fetch(urlApi,config)
     Name3.innerHTML = data.results[3].name
     Status3.innerHTML = data.results[3].status
     Specie3.innerHTML = data.results[3].species
+    Type3.innerHTML = data.results[3].type
     Gender3.innerHTML = data.results[3].gender
     console.log(data.results[3].name)
 })
@@ -109,6 +113,7 @@ fetch(urlApi,config)
     Name4.innerHTML = data.results[4].name
     Status4.innerHTML = data.results[4].status
     Specie4.innerHTML = data.results[4].species
+    Type4.innerHTML = data.results[4].type
     Gender4.innerHTML = data.results[4].gender
     console.log(data.results[4].name)
 })
@@ -130,6 +135,7 @@ fetch(urlApi,config)
     Name5.innerHTML = data.results[5].name
     Status5.innerHTML = data.results[5].status
     Specie5.innerHTML = data.results[5].species
+    Type5.innerHTML = data.results[5].type
     Gender5.innerHTML = data.results[5].gender
     console.log(data.results[5].name)
 })
@@ -150,6 +156,7 @@ fetch(urlApi,config)
     Name6.innerHTML = data.results[6].name
     Status6.innerHTML = data.results[6].status
     Specie6.innerHTML = data.results[6].species
+    Type6.innerHTML = data.results[6].type
     Gender6.innerHTML = data.results[6].gender
     console.log(data.results[6].name)
 })
@@ -171,15 +178,17 @@ fetch(urlApi,config)
     Name7.innerHTML = data.results[7].name
     Status7.innerHTML = data.results[7].status
     Specie7.innerHTML = data.results[7].species
+    Type7.innerHTML = data.results[7].type
     Gender7.innerHTML = data.results[7].gender
     console.log(data.results[7].name)
 })
 }
 
-button8.addEventListener('click', imprimirdirector)
+
+button8.addEventListener('click', imprimiragency)
 
 const urlApi8 = 'https://rickandmortyapi.com/api/character'
-function imprimirdirector() {
+function imprimiragency() {
 const config = {
     headers: {
         accept: "application/json",
@@ -192,7 +201,52 @@ fetch(urlApi,config)
     Name8.innerHTML = data.results[8].name
     Status8.innerHTML = data.results[8].status
     Specie8.innerHTML = data.results[8].species
+    Type8.innerHTML = data.results[8].type
     Gender8.innerHTML = data.results[8].gender
     console.log(data.results[8].name)
 })
 }
+button9.addEventListener('click', imprimiralan)
+
+const urlApi9 = 'https://rickandmortyapi.com/api/character'
+function imprimiralan() {
+const config = {
+    headers: {
+        accept: "application/json",
+    },
+}
+
+fetch(urlApi,config)
+.then((respuesta) => respuesta.json())
+.then((data) => {let persons = data.results
+    Name9.innerHTML = data.results[9].name
+    Status9.innerHTML = data.results[9].status
+    Specie9.innerHTML = data.results[9].species
+    Type9.innerHTML = data.results[9].type
+    Gender9.innerHTML = data.results[9].gender
+    console.log(data.results[9].name)
+})
+}
+
+button10.addEventListener('click', imprimiralbert)
+
+const urlApi10 = 'https://rickandmortyapi.com/api/character'
+function imprimiralbert() {
+const config = {
+    headers: {
+        accept: "application/json",
+    },
+}
+
+fetch(urlApi,config)
+.then((respuesta) => respuesta.json())
+.then((data) => {let persons = data.results
+    Name10.innerHTML = data.results[10].name
+    Status10.innerHTML = data.results[10].status
+    Specie10.innerHTML = data.results[10].species
+    Type10.innerHTML = data.results[10].type
+    Gender10.innerHTML = data.results[10].gender
+    console.log(data.results[10].name)
+})
+}
+
