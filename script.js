@@ -154,3 +154,45 @@ fetch(urlApi,config)
     console.log(data.results[6].name)
 })
 }
+
+button7.addEventListener('click', imprimirjuezrick)
+
+const urlApi7 = 'https://rickandmortyapi.com/api/character'
+function imprimirjuezrick() {
+const config = {
+    headers: {
+        accept: "application/json",
+    },
+}
+
+fetch(urlApi,config)
+.then((respuesta) => respuesta.json())
+.then((data) => {let persons = data.results
+    Name7.innerHTML = data.results[7].name
+    Status7.innerHTML = data.results[7].status
+    Specie7.innerHTML = data.results[7].species
+    Gender7.innerHTML = data.results[7].gender
+    console.log(data.results[7].name)
+})
+}
+
+button8.addEventListener('click', imprimirdirector)
+
+const urlApi8 = 'https://rickandmortyapi.com/api/character'
+function imprimirdirector() {
+const config = {
+    headers: {
+        accept: "application/json",
+    },
+}
+
+fetch(urlApi,config)
+.then((respuesta) => respuesta.json())
+.then((data) => {let persons = data.results
+    Name8.innerHTML = data.results[8].name
+    Status8.innerHTML = data.results[8].status
+    Specie8.innerHTML = data.results[8].species
+    Gender8.innerHTML = data.results[8].gender
+    console.log(data.results[8].name)
+})
+}
