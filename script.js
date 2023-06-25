@@ -114,10 +114,10 @@ fetch(urlApi,config)
 })
 }
 
-button5.addEventListener('click', imprimirabadango)
+button5.addEventListener('click', imprimirabadingo)
 
 const urlApi5 = 'https://rickandmortyapi.com/api/character'
-function imprimirabadango() {
+function imprimirabadingo() {
 const config = {
     headers: {
         accept: "application/json",
@@ -134,4 +134,23 @@ fetch(urlApi,config)
     console.log(data.results[5].name)
 })
 }
+button6.addEventListener('click', imprimirabradolf)
 
+const urlApi6 = 'https://rickandmortyapi.com/api/character'
+function imprimirabradolf() {
+const config = {
+    headers: {
+        accept: "application/json",
+    },
+}
+
+fetch(urlApi,config)
+.then((respuesta) => respuesta.json())
+.then((data) => {let persons = data.results
+    Name6.innerHTML = data.results[6].name
+    Status6.innerHTML = data.results[6].status
+    Specie6.innerHTML = data.results[6].species
+    Gender6.innerHTML = data.results[6].gender
+    console.log(data.results[6].name)
+})
+}
