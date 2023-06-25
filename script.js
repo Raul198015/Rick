@@ -13,7 +13,7 @@ changeshapeColor();
 button.addEventListener('click', imprimirrick)
 
 function openPopup() {
-window.open("https://rickandmortyapi.com/api/character/avatar/1.jpeg", "miPopup", 'width=300, height=300');
+window.open("https://rickandmortyapi.com/api/character/avatar/1.jpeg", "miPopup", 'width=250, height=400');
 }
 const urlApi = 'https://rickandmortyapi.com/api/character'
 function imprimirrick() {
