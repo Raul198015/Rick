@@ -19,7 +19,7 @@ request.onload = function() {
 function identityCharacters(jsonObj) {
     const characters = jsonObj['names'];
   
-    for (var id = 0; id < characters.length; id++) {
+    for (var i = 0; i < characters.length; i++) {
       const myArticle = document.createElement('article');
       const myH2 = document.createElement('h2');
       const myPara1 = document.createElement('p');
@@ -29,7 +29,7 @@ function identityCharacters(jsonObj) {
       const myPara5 = document.createElement('p');
       const myList = document.createElement('ul');
 
-      myH2.textContent = characters[id].name;
+      myH2.textContent = characters[i].name;
       myPara1.textContent = 'status: ' + characters[id].status;
       myPara2.textContent = 'species: ' + characters[id].specie;
       myPara3.textContent = 'type:' + characters[id].Type;
