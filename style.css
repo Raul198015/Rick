@@ -54,6 +54,7 @@ body {
     border-radius: 15px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+    margin:10px;
   }
   button:active {
     transform: translateY(10px);
