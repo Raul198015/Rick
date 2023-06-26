@@ -19,8 +19,9 @@ html {
   }
   
   section article {
-    width: 33%;
+    width: 300px;
     float: left;
+    border: solid 10px red;
   }
   
   section p {
