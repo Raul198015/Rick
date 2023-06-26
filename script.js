@@ -51,8 +51,33 @@ console.log (characters)
       myArticle.appendChild(myPara6);
       myArticle.appendChild(myPara7);
       myArticle.appendChild(myList);
-  
       section.appendChild(myArticle);
     }
   }
   
+var btn = document.getElementById("myBtn");
+
+
+var modal = document.getElementById("myModal");
+
+var span = modal.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+myArticle.addEventListener('click', function() {
+ 
+})
