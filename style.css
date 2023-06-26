@@ -4,20 +4,23 @@ body{
     justify-content:center;
     align-items: center;
     } 
-   
-      button {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #4c4eaf;
-      color: white;
-      border: none;
-      cursor: pointer;
-      }
+ 
+button {
+position:absolute;
+top: 5%;
+left: 47%;
+margin-left: -50px;  
+padding: 10px 20px;
+font-size: 20px;
+background-color: red;
+color: black;
+border:solid 5px black ;
+cursor: pointer;
+}
       
 button:hover {
-        
 background-color:
- #45a049;
+#45a049;
 }
 
 section{
@@ -72,7 +75,21 @@ h2{
 color: red;
 }
 section p {
-    color:white;
-    
-    }
+color:white;
+}
+button {
+position:absolute;
+top: 5%;
+left: 39%;
+margin-left: -50px;  
+padding: 10px 20px;
+font-size: 20px;
+background-color: yellow;
+color: black;
+}
+          
+button:hover {
+color:yellow;
+background-color:black;
+}
 }
