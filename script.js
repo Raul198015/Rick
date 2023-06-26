@@ -46,7 +46,7 @@ console.log (characters)
       myArticle.appendChild(myH2);
       myArticle.appendChild(myPara2);
       myArticle.appendChild(myPara3);
-      myArticle.appendChild(myPara4)
+      myArticle.appendChild(myPara4);
       myArticle.appendChild(myPara5);
       myArticle.appendChild(myPara6);
       myArticle.appendChild(myPara7);
