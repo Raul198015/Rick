@@ -3,14 +3,21 @@ body{
     display:flex;
     justify-content:center;
     align-items: center;
-    }   
-    
-
-
-header p {
-font-size: 1.3rem;
-font-weight: bold;
-text-align: center;
+    } 
+   
+      button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4c4eaf;
+      color: white;
+      border: none;
+      cursor: pointer;
+      }
+      
+button:hover {
+        
+background-color:
+ #45a049;
 }
 
 section{
@@ -58,10 +65,14 @@ body{
 background-color: blue;
 }
 section article {
-background-color: rgb(219, 201, 201);
+background-color: black;
 border-color: yellow;
 }
 h2{
 color: red;
 }
+section p {
+    color:white;
+    
+    }
 }

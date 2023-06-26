@@ -55,3 +55,4 @@ console.log (characters)
       section.appendChild(myArticle);
     }
   }
+  
