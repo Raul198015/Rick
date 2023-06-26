@@ -1,12 +1,12 @@
 html {
     font-family: 'helvetica neue', helvetica, arial, sans-serif;
   }
-  
-  body {
+  @media (min-width: 770px) {
+    body {
     width: 800px;
     margin: 0 auto;
   }
-  
+  }
   h2 {
     font-family: 'Faster One', cursive;
   }
