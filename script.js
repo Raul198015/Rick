@@ -1,5 +1,7 @@
 const characterList = document.getElementById('characterList');
 const filterButtons = document.getElementById('filterButtons');
+const characterPopup = document.getElementById('characterPopup');
+const popupContent = document.getElementById('popupContent');
 let charactersData = [];
 
 fetch('https://rickandmortyapi.com/api/character')
@@ -8,14 +10,14 @@ fetch('https://rickandmortyapi.com/api/character')
     const characters = data.results;
     showCharacters(characters);
 
-    // Obtener valores únicos para cada propiedad de filtro
+    
     const uniqueStatus = [...new Set(characters.map(character => character.status))];
     const uniqueSpecies = [...new Set(characters.map(character => character.species))];
     const uniqueTypes = [...new Set(characters.map(character => character.type))];
     const uniqueGenders = [...new Set(characters.map(character => character.gender))];
     const uniqueLocations = [...new Set(characters.map(character => character.location.name))];
 
-    // Crear botones de filtro
+ 
     createFilterButtons('Status', uniqueStatus);
     createFilterButtons('Species', uniqueSpecies);
     createFilterButtons('Type', uniqueTypes);
@@ -25,12 +27,13 @@ fetch('https://rickandmortyapi.com/api/character')
   .catch(error => console.log(error));
 
 function showCharacters(characters) {
-  characterList.innerHTML = ''; // Limpiar la lista antes de mostrar los personajes
+  characterList.innerHTML = ''; 
 
   characters.forEach(character => {
     const characterCard = document.createElement('div');
     characterCard.classList.add('characterCard');
     characterCard.innerHTML = `
+   
       <img src="${character.image}" alt="${character.name}">
       <h2>${character.name}</h2>
       <p>Status: ${character.status}</p>
@@ -71,3 +74,4 @@ function filterCharacters(property, value) {
     })
     .catch(error => console.log(error));
 }
+
