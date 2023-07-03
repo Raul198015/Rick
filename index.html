@@ -8,6 +8,7 @@
 </head>
 <body>
     <div id="filterButtons">
+        <button onclick="resetFilter(Reset)">Reset</button>
         <button onclick="filterCharacters('status', 'Alive')">Alive</button>
         <button onclick="filterCharacters('status', 'Dead')">Dead</button>
         <button onclick="filterCharacters('status', 'Unknown')">Unknown</button>
@@ -24,10 +25,10 @@
         <button onclick="filterCharacters('location', 'Earth')">Earth</button>
         <button onclick="filterCharacters('location', 'Space')">Space</button>
         <button onclick="filterCharacters('location', 'Unknown')">Unknown Location</button>
-        <button onclick="resetFilter()">Reset</button>
+    
       </div>
     <section id="characterList">
-        <!-- Aquí se mostrarán los personajes -->
+        
       </section>
   
       <script src="script.js"></script
