@@ -43,7 +43,11 @@ function showCharacters(characters) {
       <p>Origin: ${character.origin.name}</p>
       <p>Location: ${character.location.name}</p>
     `;
+    const characterImage = characterCard.querySelector('img');
+    characterImage.addEventListener('click', () => showCharacterPopup(character))
     characterList.appendChild(characterCard);
+
+  
   });
 }
 
@@ -73,5 +77,40 @@ function filterCharacters(property, value) {
       showCharacters(filteredCharacters);
     })
     .catch(error => console.log(error));
+}
+
+function showCharacterPopup(character) {
+  const popupImage = document.createElement('img');
+  popupImage.classList.add('characterPopupImage');
+  popupImage.src = character.image;
+  popupImage.alt = character.name;
+
+  const popupInfo = document.createElement('div');
+  popupInfo.classList.add('characterPopupInfo');
+  popupInfo.innerHTML = `
+    <h2>${character.name}</h2>
+    <p>Status: ${character.status}</p>
+    <p>Species: ${character.species}</p>
+    <p>Type: ${character.type}</p>
+    <p>Gender: ${character.gender}</p>
+    <p>Origin: ${character.origin.name}</p>
+    <p>Location: ${character.location.name}</p>
+  `;
+
+  // Limpiar el contenido anterior del popup
+  popupContent.innerHTML = '';
+
+  // Agregar el contenido al popup
+  popupContent.appendChild(popupImage);
+  popupContent.appendChild(popupInfo);
+
+  // Mostrar el popup
+  characterPopup.style.display = 'block';
+}
+function closeCharacterPopup() {
+  const closePopupButton = document.getElementById('closePopup');
+  closePopupButton.addEventListener('click', () => {
+    characterPopup.style.display = 'none';
+  });
 }
 

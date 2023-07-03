@@ -1,6 +1,12 @@
  *{
   background-color: red;
  }
+ h1{
+  background-color: yellow;
+  color: blue;
+  text-align: center;
+  font-family: fantasy;
+ }
  body {
   font-family: Arial, sans-serif;
 }
@@ -46,8 +52,6 @@ header {
   justify-content: center;
   color:black;
   font-weight: bold;
-
-  
 }
 
 .characterCard {
@@ -58,18 +62,22 @@ header {
   text-align: center;
   border:solid black 5px;
   background-color: red;
-  
-}
+  }
+  .characterCard:hover {
+    transform: scale(0.95);
+    height: 90%;
+  }
 
 .characterCard img {
   width: 100%;
   border-radius: 5px;
   margin-bottom: 10px;
   border:solid yellow;
-  
-
-
-}
+  transition: transform 0.6s;
+  }
+  .characterCard img:hover {
+    transform: rotateY(180deg);
+  }
 
 .popup {
   display: none;
@@ -87,9 +95,10 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: yellow;
+  color: blue;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -113,3 +122,7 @@ header {
 .characterPopupInfo {
   text-align: center;
 }
+
+
+
+
