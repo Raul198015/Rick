@@ -1,5 +1,5 @@
  *{
-  background-color: green;
+  background-color: red;
  }
  body {
   font-family: Arial, sans-serif;
@@ -17,24 +17,27 @@ header {
   justify-content: center;
   margin-bottom: 10px;
   border:solid blue;
+  
   color: black;
   font-weight: bold;
 }
 
 
 #filterButtons button {
+  
   margin: 5px;
   padding: 5px 10px;
   color:black;
   font-weight: bold;
-  background-color: yellow;
-  border: none;
-  border-radius: 5px;
+  border: solid yellow;
+  border-radius: 10px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 #filterButtons button:hover {
-  background-color: #fc0a0a;
+  background-color: black;
+  color:blue;
 }
 
 #characterList {
@@ -42,22 +45,28 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   color:black;
+  font-weight: bold;
+
+  
 }
 
 .characterCard {
   width: 200px;
   margin: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
   border-radius: 5px;
   text-align: center;
   border:solid black 5px;
+  background-color: red;
+  
 }
 
 .characterCard img {
   width: 100%;
   border-radius: 5px;
   margin-bottom: 10px;
-  border:solid yellow 2px;
+  border:solid yellow;
+  
+
 
 }
