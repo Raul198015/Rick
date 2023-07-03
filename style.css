@@ -1,123 +1,50 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #45a049;
-  }
-  
-  header {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  article {
-    background-color: red;
-    border: 5px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    width: 300px;
-    text-align: center;
-    opacity:100;
-    transform: translateY(10px);
-    transition: all 0.5s ease;
-    }
-    article:hover {
-      transform: translateY(0);
-      box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
-    }
+  font-family: Arial, sans-serif;
+}
 
-    article img {
-      max-width: 90%;
-      height: auto;
-      border-radius: 5px;
-      border: solid black;
-      transition: transform 0.5s ease;
-    }
-    
-    article:hover img {
-      transform: scale(0.9);
-    }
-
-    button {
-    padding: 10px 20px;
-    font-size: 30px;
-    background-color: red;
-    color: black;
-    border: solid yellow 5px;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-    margin:10px;
-  }
-  button:active {
-    transform: translateY(10px);
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  
-  /* Estilos de la ventana modal */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-  }
-/* Estilos para el contenido del modal */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
+header {
+  background-color: #333;
   padding: 20px;
-  border: 1px solid #888;
-  width: 50%;
+  color: white;
+  text-align: center;
+}
+#filterButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
-/* Estilos para el botón de cerrar */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
+#filterButtons button {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-  
+#filterButtons button:hover {
+  background-color: #aaa;
+}
 
-@media (max-width:1200px) {
-section{
-display:flex;
+#characterList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-body{
-background-color: blue;
+
+.characterCard {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
 }
-          
-button:hover {
-color:yellow;
-background-color:black;
-}
+
+.characterCard img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }

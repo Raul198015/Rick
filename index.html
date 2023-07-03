@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./style.css">
-<title>Ricky & Morty</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-<header>
-    <button id="myBtn">Abrir Popup</button>
-
-<div id="myModal" class="modal">
-<div class="modal-content">
-<span class="close">&times;</span>
-<img id="popupImage" src= "https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="">
-<p>Contenido del popup aquí</p>
-</div>
-</div>
-
-<button id="button">Filtro Species</button>
-</header>
-
-
-</div>
 <body>
-<section></section>
-<script src="script.js"></script>
+    <div id="filterButtons">
+        <button onclick="filterCharacters('status', 'Alive')">Alive</button>
+        <button onclick="filterCharacters('status', 'Dead')">Dead</button>
+        <button onclick="filterCharacters('status', 'Unknown')">Unknown</button>
+        <button onclick="filterCharacters('species', 'Human')">Human</button>
+        <button onclick="filterCharacters('species', 'Alien')">Alien</button>
+        <button onclick="filterCharacters('species', 'Unknown')">Unknown Species</button>
+        <button onclick="filterCharacters('type', 'Humanoid')">Humanoid</button>
+        <button onclick="filterCharacters('type', 'Robot')">Robot</button>
+        <button onclick="filterCharacters('type', 'Unknown')">Unknown Type</button>
+        <button onclick="filterCharacters('gender', 'Male')">Male</button>
+        <button onclick="filterCharacters('gender', 'Female')">Female</button>
+        <button onclick="filterCharacters('gender', 'Genderless')">Genderless</button>
+        <button onclick="filterCharacters('gender', 'Unknown')">Unknown Gender</button>
+        <button onclick="filterCharacters('location', 'Earth')">Earth</button>
+        <button onclick="filterCharacters('location', 'Space')">Space</button>
+        <button onclick="filterCharacters('location', 'Unknown')">Unknown Location</button>
+        <button onclick="resetFilter()">Reset</button>
+      </div>
+    <section id="characterList">
+        <!-- Aquí se mostrarán los personajes -->
+      </section>
+  
+      <script src="script.js"></script
 </body>
 </html>

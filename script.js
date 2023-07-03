@@ -1,83 +1,73 @@
-const header = document.querySelector('header');
+const characterList = document.getElementById('characterList');
+const filterButtons = document.getElementById('filterButtons');
+let charactersData = [];
 
-const section = document.querySelector('section');
+fetch('https://rickandmortyapi.com/api/character')
+  .then(response => response.json())
+  .then(data => {
+    const characters = data.results;
+    showCharacters(characters);
 
-const requestURL = 'https://rickandmortyapi.com/api/character';
+    // Obtener valores únicos para cada propiedad de filtro
+    const uniqueStatus = [...new Set(characters.map(character => character.status))];
+    const uniqueSpecies = [...new Set(characters.map(character => character.species))];
+    const uniqueTypes = [...new Set(characters.map(character => character.type))];
+    const uniqueGenders = [...new Set(characters.map(character => character.gender))];
+    const uniqueLocations = [...new Set(characters.map(character => character.location.name))];
 
-const request = new XMLHttpRequest();
+    // Crear botones de filtro
+    createFilterButtons('Status', uniqueStatus);
+    createFilterButtons('Species', uniqueSpecies);
+    createFilterButtons('Type', uniqueTypes);
+    createFilterButtons('Gender', uniqueGenders);
+    createFilterButtons('Location', uniqueLocations);
+  })
+  .catch(error => console.log(error));
 
-request.open('GET', requestURL);
+function showCharacters(characters) {
+  characterList.innerHTML = ''; // Limpiar la lista antes de mostrar los personajes
 
-request.responseType = 'json';
-request.send();
-
-request.onload = function() {
-    const characters = request.response;
-    identityCharacters(characters);
+  characters.forEach(character => {
+    const characterCard = document.createElement('div');
+    characterCard.classList.add('characterCard');
+    characterCard.innerHTML = `
+      <img src="${character.image}" alt="${character.name}">
+      <h2>${character.name}</h2>
+      <p>Status: ${character.status}</p>
+      <p>Species: ${character.species}</p>
+      <p>Type: ${character.type}</p>
+      <p>Gender: ${character.gender}</p>
+      <p>Origin: ${character.origin.name}</p>
+      <p>Location: ${character.location.name}</p>
+    `;
+    characterList.appendChild(characterCard);
+  });
 }
 
-function identityCharacters(jsonObj) {
-    const characters = jsonObj['results'];
-console.log (characters)    
-    for (var i = 0; i < characters.length; i++) {
-      const myArticle = document.createElement('article');
-      const myPara1 = document.createElement('img')
-      const myH2 = document.createElement('h2');
-      const myPara2 = document.createElement('p');
-      const myPara3 = document.createElement('p');
-      const myPara4 = document.createElement('p');
-      const myPara5 = document.createElement('p');
-      const myPara6 = document.createElement('p');
-      const myPara7 = document.createElement('p');
-      const myList = document.createElement('ul');
+function createFilterButtons(label, values) {
+  const filterGroup = document.createElement('div');
+  filterGroup.classList.add('filterGroup');
 
-      myPara1.setAttribute("src", characters[i].image);
-      myH2.textContent = characters[i].name;
-      myPara2.textContent = 'status: ' + characters[i].status;
-      myPara3.textContent = 'species: ' + characters[i].species;
-      myPara4.textContent = 'type:' + characters[i].type;
-      myPara5.textContent = 'gender:' + characters[i].gender;
-      myPara6.textContent = 'origin:' + characters[i].name;
-      myPara7.textContent = 'location:' + characters[i].name;
-      
-      
-  
-      myArticle.appendChild(myPara1);
-      myArticle.appendChild(myH2);
-      myArticle.appendChild(myPara2);
-      myArticle.appendChild(myPara3);
-      myArticle.appendChild(myPara4);
-      myArticle.appendChild(myPara5);
-      myArticle.appendChild(myPara6);
-      myArticle.appendChild(myPara7);
-      myArticle.appendChild(myList);
-      section.appendChild(myArticle);
-    }
-  }
-  
-var btn = document.getElementById("myBtn");
+  const filterLabel = document.createElement('label');
+  filterLabel.textContent = label;
+  filterGroup.appendChild(filterLabel);
 
+  values.forEach(value => {
+    const filterButton = document.createElement('button');
+    filterButton.textContent = value;
+    filterButton.addEventListener('click', () => filterCharacters(label, value));
+    filterGroup.appendChild(filterButton);
+  });
 
-var modal = document.getElementById("myModal");
-
-var span = modal.getElementsByClassName("close")[0];
-
-
-btn.onclick = function() {
-  modal.style.display = "block";
+  filterButtons.appendChild(filterGroup);
 }
 
-
-span.onclick = function() {
-  modal.style.display = "none";
+function filterCharacters(property, value) {
+  fetch(`https://rickandmortyapi.com/api/character?${property.toLowerCase()}=${value}`)
+    .then(response => response.json())
+    .then(data => {
+      const filteredCharacters = data.results;
+      showCharacters(filteredCharacters);
+    })
+    .catch(error => console.log(error));
 }
-
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-myArticle.addEventListener('click', function() {
- 
-})
